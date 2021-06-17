@@ -7,6 +7,10 @@
                 color: purple;
             }
         </style>
+
+
+<script src="../organisms/userCard.js"></script>
+<script  src="../organisms/body.js"></script>
     </head>
     <body>
         <h1>WC TRAINING SITE FROM ROLI</h1>
@@ -17,5 +21,17 @@
         </user-card>
         <user-card name="Nadine Schenk" avatar="https://randomuser.me/api/portraits/men/2.jpg"></user-card>
     </body>
-    <script src="../organisms/userCard.js"></script>
+
+    <script>
+        [
+            ['user-card', UserCard],
+            ['o-body', Body]
+        ].forEach(element => {
+            if (element && !customElements.get(element[0])){
+                customElements.define(...element)
+            } else {
+
+            }
+        })
+    </script>
 </html>

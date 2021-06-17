@@ -51,6 +51,9 @@ class UserCard extends HTMLElement {
     }
 
 
+
+
+
     toggleInfo(){
         this.showInfo = !this.showInfo;
 
@@ -81,4 +84,3 @@ class UserCard extends HTMLElement {
 
 
 
-window.customElements.define('user-card', UserCard);
